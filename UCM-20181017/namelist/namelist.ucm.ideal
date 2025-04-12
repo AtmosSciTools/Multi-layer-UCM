@@ -1,0 +1,52 @@
+&time_control
+ run_day           = 4
+ run_hour          = 0
+ start_year        = 2014
+ start_month       = 8
+ start_day         = 1
+ start_hour        = 0
+ start_minute      = 0
+ start_second      = 0
+ output_interval   = 600
+ ofiname = "./case2_"
+/
+
+&domains
+ dt            = 2.0d0
+ kms           = 1
+ kme           = 120
+ z_top         = 3000.0d0
+ grid_type     = 1
+ ics_path      = "preprocess/20180718/data/ucm_data/ics/"
+ lon           = 139.841d0
+ lat           = 35.8349d0
+/
+
+&params
+ tb            = 301.5d0
+ ganma         = 0.004d0
+ lapse_rate    = -0.01d0
+ pb            = 1013.0d0
+ Ug            = 10.0d0
+ Vg            = 0.0d0
+/
+
+&physics
+ sf_surface_physics  = 2
+ sltype     = 3
+ nw                  = 13
+ soil_temp           = 16.d0
+ utype = 2
+/
+
+&dynamics
+ bl_pbl_physics     = 1
+/
+
+&nesting
+ ow_nesting         = 0
+ dt_obs             = 3600.d0
+ input_fname        = "preprocess/20180718/data/ucm_data/kugahara_topvars_20050901.csv"
+/
+
+&end

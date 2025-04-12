@@ -1,0 +1,132 @@
+# The parameters in this table may vary greatly from city to city.
+# The default values are probably not appropriate for any given city.
+# Users should adapt these values based on the city they are working
+# with.
+
+# Urban Parameters depending on Urban type
+# USGS
+
+Number of urban categories:  3
+
+#  Where there are multiple columns of values, the values refer, in
+#  order, to: 1) Commercial, 2) High intensity residential, and 3) Low
+#  intensity residential:  I.e.:
+#
+#  Index:     1           2              3
+#  Type:  Kugahara, Hi-dens Res, Low-dens Res
+#
+
+#
+# Urban unit: ZR, ROOF_WIDTH, ROAD_WIDTH  [ m ]
+#
+
+BUILDING_HEIGHT:       7.,  10.0,  7.0
+ROOF_WIDTH:       9.,  10.,  8.3
+ROAD_WIDTH:       6.,  10.,  8.3
+
+#
+#   Anthropogenic heat [ W m{-2} ]
+#
+
+AH:   30.0, 20.0, 0.
+
+#
+# Fraction of the urban landscape which does not have natural
+#           vegetation. [ Fraction ]
+#
+
+FRC_URB: 0.8, 0.8, 0.9
+
+#
+# Heat capacity of roof:CAP  [ J m{-3} K{-1} ]
+#
+
+HEAT_CAPACITY_ROOF:    2.1D6, 2.1D6, 2.1D6,
+HEAT_CAPACITY_WALL:    2.1D6, 2.1D6, 2.1D6,
+HEAT_CAPACITY_GROUND:  2.1D6, 2.0D6, 2.0D6,
+
+#
+# Thermal conductivity: AKS  [ J m{-1} s{-1} K{-1} ]
+#
+
+THERMAL_CONDUCTIVITY_ROOF:   1.5,  1.5,   1.5,
+THERMAL_CONDUCTIVITY_WALL:   1.5,  1.5,   1.5,
+THERMAL_CONDUCTIVITY_GROUND: 1.5,  0.7,   0.7,
+#THERMAL_CONDUCTIVITY_GROUND: 1.5,  1.5,   1.5,
+#
+# Albedo
+#
+#
+
+ALBEDO_ROOF: 0.2, 0.20, 0.20
+ALBEDO_WALL: 0.2, 0.20, 0.20
+ALBEDO_GROUND: 0.2, 0.2, 0.20
+
+#
+# Z0:  Roughness length for momentum [ m ]
+#       Only active for CH_SCHEME == 1
+#
+
+Z0_WALL: 0.0001, 0.0001, 0.0001
+Z0_GROUND: 0.01, 0.01, 0.01
+Z0_ROOF: 0.01, 0.01, 0.01
+
+
+#
+# DDZR:  Thickness of each roof layer [ m ]
+#        This is currently NOT a function urban type, but a function
+#        of the number of layers.  Number of layers must be 4, for now.
+#
+
+ROOF_LAYERS_NU:   5
+WALL_LAYERS_NU:   5
+GROUND_LAYERS_NU: 5
+
+
+ROOF_THICKNESS:   0.2, 0.2, 0.2
+WALL_THICKNESS:   0.2, 0.2, 0.2
+GROUND_THICKNESS: 1., 1., 1.
+
+#
+# BOUNDR:  Lower boundary condition for roof layer temperature [ 1: Zero-Flux,  2: T = Constant ]
+#
+
+BOUND_CONDITION_ROOF:   2
+BOUND_CONDITION_WALL:   2
+BOUND_CONDITION_GROUND: 2
+
+#
+# Lower boundary condition for roof temperature [ K ]
+#
+
+T_IN_ROOF:  26.00, 26.00, 26.00
+T_IN_WALL:  26.00, 26.00, 26.00
+T_IN_GROUND:  16.00, 16.00, 25.00
+
+#
+# Thermal insolution []
+#
+
+THERMAL_INSOL_ROOF:       0
+THERMAL_INSOL_WALL:       0
+
+#
+# AHOPTION [ 0: No anthropogenic heating,  1: Anthropogenic heating will be added to sensible heat flux term ]
+#
+
+AH_OPTION: 1
+
+#
+# Anthropogenic Heating diurnal profile.
+#   Multiplication factor applied to AH (as defined in the table above)
+#   Hourly values ( 24 of them ), starting at 01 hours Local Time.
+#   For sub-hourly model time steps, value changes on the hour and is
+#   held constant until the next hour.
+#
+
+AH_DIURNAL_PROFILE: 0.37 0.26 0.20 0.18 0.19 0.30 0.45 0.61 0.73 0.79 0.82 0.85 0.87 0.88 0.90 0.92 0.96 0.99 1.00 0.95 0.87 0.76 0.64 0.51
+#
+# FRCURBOPT: OPTION for FRC_URB [ 0: No Change (calculated from landusef), 1:
+#
+
+FRC_URB_OPT: 1

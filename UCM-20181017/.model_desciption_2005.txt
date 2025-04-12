@@ -1,0 +1,101 @@
+ 
+       *** MODEL DESCRIPTION ***
+ 
+ -----------------
+  physics schemes 
+ -----------------
+  boundary layer physics :: MY_lev2  
+  sf_surface_physics :: multilayer UCM 
+ 
+   *** Urban parameter ***
+                  ZR   7.00
+          ROOF_WIDTH   9.00
+           ROAD_WITH   6.00
+                  AH  30.00
+             FRC_URB   0.80
+                CAPR  2100000.
+                CAPB  2100000.
+                CAPG  2100000.
+                AKSR   1.50
+                AKSB   1.50
+                AKSG   1.50
+                ALBR   0.20
+                ALBB   0.20
+                ALBG   0.20
+                 Z0B   0.00
+                 Z0G   0.01
+                 Z0R   0.01
+              TRLEND  26.00
+              TBLEND  26.00
+              TGLEND  16.00
+                DDZR   0.20
+                DDZB   0.20
+                DDZG   1.00
+            AHDIUPRF 0.4 0.3 0.2 0.2 0.2 0.3 0.5 0.6 0.7 0.8 0.8 0.8 0.9 0.9 0.9 0.9 1.0 1.0 1.0 0.9 0.9 0.8 0.6 0.5
+  THERMAL_INSOL_ROOF   0
+  THERMAL_INSOL_WALL   0
+                RLNU   5
+                BLNU   5
+                GLNU   5
+              BOUNDR   2
+              BOUNDB   2
+              BOUNDG   2
+            AHOPTION   1
+           FRCURBOPT   1
+ 
+BUILDING HEIGHT----   7.00
+BUILDING WIDTH-----   9.00
+ROAD WIDTH     ----   9.75
+    number of urban canopy layers:           4
+
+ --- ground view factor ------------------------- 
+    SKY VIEW:      0.705
+    VF -> WALL  :    0.095
+    VF -> WALL  :    0.073
+    VF -> WALL  :    0.071
+    VF -> WALL  :    0.056
+ --- ground view factor ------------------------- 
+    SKY VIEW:      0.618
+    VF -> WALL  :    0.132
+    VF -> WALL  :    0.100
+    VF -> WALL  :    0.083
+    VF -> WALL  :    0.067
+ --- ground view factor average------------------- 
+    SKY VIEW:      0.649
+    VF -> WALL  :    0.119
+    VF -> WALL  :    0.091
+    VF -> WALL  :    0.079
+    VF -> WALL  :    0.063
+  CHECK:    1.000
+ LAYER-------------------------            1
+    SKY VIEW:      0.270
+    GROUND VIEW:   0.425
+    VF -> P -> V       :      0.1371    0.0108
+    VF -> P -> V       :      0.0672    0.0075
+    VF -> P -> V       :      0.0401    0.0075
+    VF -> P -> V       :      0.0269    0.0075
+    CHECK       :    1.000
+ LAYER-------------------------            2
+    SKY VIEW:      0.305
+    GROUND VIEW:   0.350
+    VF -> P -> V       :      0.0672    0.0075
+    VF -> P -> V       :      0.1371    0.0108
+    VF -> P -> V       :      0.0672    0.0075
+    VF -> P -> V       :      0.0401    0.0075
+    CHECK       :    1.000
+ LAYER-------------------------            3
+    SKY VIEW:      0.352
+    GROUND VIEW:   0.303
+    VF -> P -> V       :      0.0401    0.0075
+    VF -> P -> V       :      0.0672    0.0075
+    VF -> P -> V       :      0.1371    0.0108
+    VF -> P -> V       :      0.0672    0.0075
+    CHECK       :    1.000
+ LAYER-------------------------            4
+    SKY VIEW:      0.427
+    GROUND VIEW:   0.268
+    VF -> P -> V       :      0.0269    0.0075
+    VF -> P -> V       :      0.0401    0.0075
+    VF -> P -> V       :      0.0672    0.0075
+    VF -> P -> V       :      0.1371    0.0108
+    CHECK       :    1.000

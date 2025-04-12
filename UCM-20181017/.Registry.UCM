@@ -1,0 +1,82 @@
+#  Variable Registry
+#  Variable properties
+#  1. variable name
+#  2. desciption words
+#  3. units
+#  4. dimensions:  k is vertical;
+#                  n is time;
+#                  w is wall for ucm
+#  5. type of variables: all is common variables;
+#                        slab is module variables in slab
+#                        ucm is module variables in ucm
+#  6. Define whether output of not
+# --------------------------------------------------------------#
+
+# COMMON VARIABLE-----------------------------------------------#
+"TEMP"      "potential temperature"         "C"      kn   all     h
+"QV"        "specific humidity"             "g/kg"   kn   all     h
+"U"         "u wind"                        "m/s"    kn   all     h
+"V"         "v wind"                        "m/s"    kn   all     h
+"KM"        "turbulence diff momentum"      "m2/s"   kn   all     h
+"KH"        "heat diff momentum"            "m2/s"   kn   all     h
+"T2"        "Temperature at 2m"             "C"      n    all     h
+"Q2"        "Specific humidity at 2m"       "g/kg"   n    all     h
+"U10"       "Wind x component at 10m"       "m/s"    n    all     h
+"V10"       "Wind y component at 10m"       "m/s"    n    all     h
+
+# RADIATION MODEL-----------------------------------------------#
+"ELEVATION" "Solar elevation angle"         "rad"    n    rad     h
+"ADI"       "Solar azimud angle"            "rad"    n    rad     h
+"COSADI"    "Cos"                           ""       n    rad     h
+"SINADI"    "Sin"                           ""       n    rad     h
+"SW"        "Short wave radiation flux"     "rad"    n    rad     h
+"SD"        "Short wave radiation flux"     "rad"    n    rad     h
+"SS"        "Short wave radiation flux"     "rad"    n    rad     h
+"LW"        "Short wave radiation flux"     "rad"    n    rad     h
+
+# SLAB MODEL----------------------------------------------------#
+"BRiNu"        "Bulk Richardson number"     "-"      n    slab    h
+"CM_SLB"       "extrance coefficient"       "-"      n    slab    -
+"CH_SLB"       "extrance coefficient heat"  "-"      n    slab    -
+"TAU_U_SLB"    "tau u wind"                 "-"      n    slab    -
+"TAU_V_SLB"    "tau v wind"                 "-"      n    slab    -
+"TAU_T_SLB"    "tau heat"                   "-"      n    slab    -
+"RNET_SLB"     "net radiation"              "W/m2"   n    slab    h
+"H_SLB"        "sensible heat flux"         "W/m2"   n    slab    h
+"LE_SLB"       "latent heat flux"           "W/m2"   n    slab    h
+"GR_SLB"       "ground flux"                "W/m2"   n    slab    h
+"TS_SLB"       "surface temperature"        "C"      n    slab    h
+
+# MUCM MODEL----------------------------------------------------#
+"RNET_UCM"    "Surface net radiation"         "W/m2"    sn    ucm     h
+"H_UCM"       "Surface sensible heat flux"    "W/m2"    sn    ucm     h
+"LE_UCM"      "Surface latent heat flux"      "W/m2"    sn    ucm     h
+"GR_UCM"      "Surface ground flux"           "W/m2"    sn    ucm     h
+"TS_UCM"      "Surface surface temperature"   "C"       sn    ucm     h
+"CM_UCM"      "Surface extrance coefficient momentum"   "-"     sn    ucm     h
+"CH_UCM"      "Surface extrance coefficient heat"       "-"     sn    ucm     h
+"SD_UCM"      "Wall direct radiation"         "W/m2"    sn    ucm     h
+"Ri_UCM"      "Bulk Richardson number"        "-"       sn    ucm     h
+"SHADE_UCM"   "Surface shade rate"            "-"       sn    ucm     h
+"SWNET"       "Net short wave on surface"     "W/m2"    sn    ucm     h
+"LWNET"       "Net long wave on surface"      "W/m2"    sn    ucm     h
+"LWDOWN"      "Downward long wave on surface" "W/m2"    sn    ucm     h
+"LWUP"        "Upward long wave on surface"   "W/m2"    sn    ucm     h
+"TAU_U_UCM"   "tau u wind"                 "-"      n    ucm     h
+"TAU_V_UCM"   "tau v wind"                 "-"      n    ucm     h
+"TAU_T_UCM"   "tau heat"                   "-"      n    ucm     h
+
+
+# WRF INPUT----------------------------------------------------#
+"THETA_T"   "potential temperature at top"  "K"      n    all     h
+"QV_T"      "specific humidity at top"      "kg/kg"  n    all     h
+"U_T"       "wind speed (x) at top"         "m/s"    n    all     h
+"V_T"       "wind speed (y) at top"         "m/s"    n    all     h
+"SW_B"      "downward short-wave radiation" "W/m2"   n    all     h
+"LW_B"      "downward long-wave radiation"  "w/mw"   n    all     h
+"COSZ"      "COS of SOLAR ZENITH ANGLE"     "-"      n    all     h
+"OMG"       "SOLAR HOUR ANGLE"              "-"      n    all     h
+"DECLIN"    "SOLAR DECLINATION"             "-"      n    all     h
+"AZTH_C"    "Cosin of azimuth angle"        "-"      n    all     h
+"AZTH_S"    "Sin of azimud angle"           "-"      n    all     h
+"SOL_ELEV"  "Solar elevation angle"         "rad"    n    rad     h

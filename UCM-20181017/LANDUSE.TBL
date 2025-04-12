@@ -1,0 +1,13 @@
+# Land use Table---------------------------------------------------------------
+# LU    |alb|   moisture | emissivity | z0 |bo |lamda| heat capacity| name |
+# index |   |availability|           |    |   |     |
+#------------------------------------------------------------------------------
+
+1   15.   .10   .88   50.    3.    4.    40.e5 'Urban and Built-Up Land'
+2   18.   .50  .985   10.    0.3   1.6    25.0e5 'Irrigated Cropland and Pasture'
+3   19.   .15   .96   12.    0.25   1.0    20.8e5 'Grassland'
+4   22.   .10   .93    5.    3.    0.25   20.8e5 'Shrubland'
+5   20.   .15   .92   15.    3.    0.25   25.0e5 'Savanna'
+6   16.   .30   .93   50.    4.    1.6    25.0e5 'Deciduous Broadleaf Forest'
+7    8.   1.0   .98  0.01    6.    1.6    9.0e25 'Water Bodies'
+8   15.   .10   .88   80.    3.    1.6    18.9e5 'Urban and Built-Up Land'

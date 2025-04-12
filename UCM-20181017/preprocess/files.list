@@ -1,0 +1,9 @@
+ &flist
+ NF      =           6
+flname( 1)  =  "./preprocess/kugahara/interpo_kugahara_0901_sd.txt"
+flname( 2)  =  "./preprocess/kugahara/interpo_kugahara_0901_lw.txt"
+flname( 3)  =  "./preprocess/kugahara/interpo_kugahara_0901_u.txt"
+flname( 4)  =  "./preprocess/kugahara/interpo_kugahara_0901_temp.txt"
+flname( 5)  =  "./preprocess/kugahara/interpo_kugahara_0901_qv.txt"
+flname( 6)  =  "./preprocess/kugahara/interpo_kugahara_0901_ah.txt"
+ /
